@@ -1,1 +1,1 @@
-# golang_bestpractice
+# golang_bestpractices

@@ -198,9 +198,12 @@ func main() {
 	rk := "sid_rk"
 	queueName := "sid_queue"
 	exchType := "direct"
-	fmt.Printf("argument 0 : %s\n", os.Args[1])
+	port := "8089"
+	if len(os.Args) > 1 {
+		port = os.Args[1]
+	}
 	r := setUpREST()
-	srv := serviceUp(r, os.Args[1])
+	srv := serviceUp(r, port)
 	conn, err := amqp.Dial("amqp://guest:guest@localhost:5672/")
 	failOnError(err, "Failed to connect to RabbitMQ")
 	defer conn.Close()

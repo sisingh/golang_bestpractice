@@ -1,5 +1,5 @@
 # nginx_golang_rmq
-This project demonstrates **Nginx's** reverse proxy based on body parameters of request with the help of Lua Script. REST server is built in golang which also listens on RMQ. Best coding practices is main motto of this project while writing a professional process.
+This project demonstrates Nginx's reverse proxy based on body parameters of request with the help of Lua Script. REST server is built in golang which also listens on RMQ. Best coding practices is main motto of this project while writing a professional software.
 ---
 ## Running the project
 1. Change Nginx Config to point to two backend services atleast
